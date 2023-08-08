@@ -18,6 +18,28 @@
       <Platform>x64</Platform>
     </ProjectConfiguration>
   </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="AbstractScene.h" />
+    <ClInclude Include="CharaBase.h" />
+    <ClInclude Include="EndScene.h" />
+    <ClInclude Include="GameMain.h" />
+    <ClInclude Include="InputKey.h" />
+    <ClInclude Include="ResultScene.h" />
+    <ClInclude Include="SceneManeger.h" />
+    <ClInclude Include="SphereCollider.h" />
+    <ClInclude Include="TitleScene.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="CharaBase.cpp" />
+    <ClCompile Include="EndScene.cpp" />
+    <ClCompile Include="GameMain.cpp" />
+    <ClCompile Include="InputKey.cpp" />
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="ResultScene.cpp" />
+    <ClCompile Include="SceneManeger.cpp" />
+    <ClCompile Include="SphereCollider.cpp" />
+    <ClCompile Include="TitleScene.cpp" />
+  </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>
     <Keyword>Win32Proj</Keyword>
