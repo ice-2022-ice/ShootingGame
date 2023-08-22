@@ -30,6 +30,7 @@
     <ClInclude Include="NwaySpawner.h" />
     <ClInclude Include="Player.h" />
     <ClInclude Include="ResultScene.h" />
+    <ClInclude Include="SceneBase.h" />
     <ClInclude Include="SceneManeger.h" />
     <ClInclude Include="SphereCollider.h" />
     <ClInclude Include="TitleScene.h" />
@@ -46,6 +47,7 @@
     <ClCompile Include="NwaySpawner.cpp" />
     <ClCompile Include="Player.cpp" />
     <ClCompile Include="ResultScene.cpp" />
+    <ClCompile Include="SceneBase.cpp" />
     <ClCompile Include="SceneManeger.cpp" />
     <ClCompile Include="SphereCollider.cpp" />
     <ClCompile Include="TitleScene.cpp" />
