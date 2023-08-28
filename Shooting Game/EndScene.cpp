@@ -12,7 +12,7 @@ EndScene::~EndScene()
 
 }
 
-AbstractScene* EndScene::Update()
+SceneBase* EndScene::Update()
 {
 
 	return this;

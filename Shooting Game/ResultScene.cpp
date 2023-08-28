@@ -14,7 +14,7 @@ ResultScene::~ResultScene()
 
 }
 
-AbstractScene* ResultScene::Update()
+SceneBase* ResultScene::Update()
 {
 	// スペースキーでメニュー選択
 	if (InputKey::GetKey(PAD_INPUT_10))

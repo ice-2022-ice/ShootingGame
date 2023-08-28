@@ -1,8 +1,8 @@
 #pragma once
-#include "AbstractScene.h"
+#include "SceneBase.h"
 #include "DxLib.h"
 
-class TitleScene :public AbstractScene
+class TitleScene :public SceneBase
 {
 public:
     int TitleImage;
@@ -11,10 +11,14 @@ public:
     int MenuY;
     int Flg;
 
+    int g_OldKye;
+    int g_NowKey;
+    int g_keyFlg;
+
 public:
     TitleScene();
     virtual ~TitleScene() {};
-    virtual AbstractScene* Update() override;
+    virtual SceneBase* Update() override;
     virtual void Draw() const override;
 };
 

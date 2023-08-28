@@ -21,7 +21,7 @@ int WINAPI WinMain(_In_ HINSTANCE ih, _In_opt_ HINSTANCE ioh, _In_ LPSTR il, _In
 	SetDrawScreen(DX_SCREEN_BACK);
 
 	//•Ï”’è‹`
-	SceneManager sceneMng(dynamic_cast<AbstractScene*>(new TitleScene));
+	SceneManager sceneMng(dynamic_cast<SceneBase*>(new TitleScene));
 
 	while (sceneMng.Update() != nullptr && ProcessMessage() != -1)
 	{

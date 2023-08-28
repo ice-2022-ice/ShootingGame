@@ -1,7 +1,7 @@
 #pragma once
-#include "AbstractScene.h"
+#include "SceneBase.h"
 
-class ResultScene :public AbstractScene
+class ResultScene :public SceneBase
 {
 private:
 	int Save_Score;		//最終スコア用の変数
@@ -13,7 +13,7 @@ public:
 
 	~ResultScene();				//デストラクタ
 
-	virtual AbstractScene* Update() override;	//更新
+	virtual SceneBase* Update() override;	//更新
 
 	virtual void Draw()const override;			//描画
 };

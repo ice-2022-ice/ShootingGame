@@ -7,7 +7,7 @@ SceneManager::SceneManager()
 	next_scene = now_scene;
 }
 
-SceneManager::SceneManager(AbstractScene* scene)
+SceneManager::SceneManager(SceneBase* scene)
 {
 	now_scene = scene;
 	next_scene = now_scene;
@@ -27,7 +27,7 @@ void SceneManager::Draw() const
 
 }
 
-AbstractScene* SceneManager::Update()
+SceneBase* SceneManager::Update()
 {
 	next_scene = now_scene->Update();
 	if (next_scene != now_scene)

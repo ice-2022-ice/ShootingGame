@@ -12,8 +12,22 @@ GameMain::~GameMain()
 
 }
 
-AbstractScene* GameMain::Update()
+SceneBase* GameMain::Update()
 {
+	// Ｚキーでメニュー選択
+	if (g_keyFlg & (PAD_INPUT_A))
+	{
+		if (MenuNumber == 0)
+		{
+			return new Game();
+		}
+
+		else if (MenuNumber == 1)
+		{
+			return new ResultScene();
+		}
+	}
+
 	return this;
 }
 
@@ -21,6 +35,6 @@ void GameMain::Draw() const
 {
 	//メインの表示
 	SetFontSize(22);
-	DrawString(100, 170, " MAIN ", 0xFFFFFF);
+	DrawString(0, 170, " MAIN ", 0xFFFFFF);
 
 }
