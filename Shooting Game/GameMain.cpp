@@ -27,6 +27,7 @@ SceneBase* GameMain::Update()
 	//		return new ResultScene();
 	//	}
 	//}
+	Player.Update();
 
 	return this;
 }
@@ -37,4 +38,5 @@ void GameMain::Draw() const
 	SetFontSize(22);
 	DrawString(0, 170, " MAIN ", 0xFFFFFF);
 
+	Player.Draw();
 }

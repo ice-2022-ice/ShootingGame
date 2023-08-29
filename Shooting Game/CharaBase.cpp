@@ -4,7 +4,7 @@ void CharaBase::Update()
 {
 }
 
-void CharaBase::Draw()
+void CharaBase::Draw() const
 {
 }
 

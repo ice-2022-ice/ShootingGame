@@ -2,6 +2,8 @@
 #include "DxLib.h"
 #include "ResultScene.h"
 #include "AbstractScene.h"
+#include "Player.h"
+
 
 class GameMain : public SceneBase
 {
@@ -12,7 +14,7 @@ private:
 	int bullets;	//ポインタ配列
 	int g_keyFlg;
 	int MenuNumber;
-
+	Player Player;
 
 public:
 	void HitCheck();			//弾、プレイヤー、敵の当たり判定のチェックを行う

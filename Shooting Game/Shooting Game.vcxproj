@@ -25,6 +25,7 @@
     <ClInclude Include="CharaBase.h" />
     <ClInclude Include="EndScene.h" />
     <ClInclude Include="Enemy.h" />
+    <ClInclude Include="Fps.h" />
     <ClInclude Include="GameMain.h" />
     <ClInclude Include="InputKey.h" />
     <ClInclude Include="NwaySpawner.h" />

@@ -8,8 +8,13 @@ private:
 	int image = 0;
 
 public:
-	void Update();
-	void Draw();
-	void Hit();
+	CharaBase();
+	static float playerX;
+	static float playerY;
+
+
+	virtual void Update();
+	virtual void Draw()const;
+	virtual void Hit();
 };
 
