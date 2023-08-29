@@ -1,5 +1,8 @@
 #pragma once
-class Player
+#include "CharaBase.h"
+
+class Player:public CharaBase
 {
+
 };
 
