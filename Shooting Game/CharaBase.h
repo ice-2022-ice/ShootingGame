@@ -12,7 +12,6 @@ public:
 	static float playerX;
 	static float playerY;
 
-
 	virtual void Update();
 	virtual void Draw()const;
 	virtual void Hit();
