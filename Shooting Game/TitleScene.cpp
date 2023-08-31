@@ -60,6 +60,7 @@ void TitleScene::Draw() const
 
 	//説明
 	SetFontSize(20);
+	DrawString(250, 410, "　escキーで終了　", 0xFFFFFF);
 	DrawString(250, 430, "　スティック（↑、↓）で移動　", 0xFFFFFF);
 	DrawString(250, 450, "　Bボタンを押して選択してください　", 0xFFFFFF);
 

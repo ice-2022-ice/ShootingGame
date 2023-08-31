@@ -6,10 +6,8 @@ private:
 	static int key_flg;
 	static int now_key;
 	static int old_key;
+
 public:
-	/*static int key_flg;
-	static int now_key;
-	static int old_key;*/
 	static int X_buf;
 	static int Y_buf;
 	static int X_flg;
@@ -33,9 +31,12 @@ public:
 		Y_now = 0;
 		Y_old = 0;
 	}
+
 	static void Update();
+
 	//‰Ÿ‚µ‚Ä‚¢‚éŠÔM†‚ğ‘—‚é
 	static int GetKey(int key);
+
 	//‰Ÿ‚µ‚½uŠÔM†‚ğ‘—‚é
 	static int GetKeyDown(int key);
 	static int GetJoyStickX(int X);
