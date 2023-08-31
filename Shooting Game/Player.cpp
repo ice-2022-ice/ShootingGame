@@ -28,12 +28,12 @@ void Player::Update()
 
 	if (stickX < 0) 
 	{
-		if (playerX > 0)
+		if (playerX > 50)
 			playerX -= 5;
 	}
-	if (stickX > 0)
+	if (stickX > 50)
 	{
-		if (playerX < 960)
+		if (playerX < 590)
 			playerX += 5;
 	}
 	if (stickY < 0)

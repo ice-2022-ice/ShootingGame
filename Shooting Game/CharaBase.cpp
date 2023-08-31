@@ -1,5 +1,9 @@
 #include "CharaBase.h"
 
+CharaBase::CharaBase()
+{
+}
+
 void CharaBase::Update()
 {
 }
