@@ -3,8 +3,8 @@
 int InputKey::key_flg;
 int InputKey::now_key;
 int InputKey::old_key;
-int InputKey::Xbuf;
-int InputKey::Ybuf;
+int InputKey::X_buf;
+int InputKey::Y_buf;
 int InputKey::X_flg;
 int InputKey::X_now;
 int InputKey::X_old;
@@ -17,12 +17,12 @@ void InputKey::Update()
 	old_key = now_key;
 	now_key = GetJoypadInputState(DX_INPUT_KEY_PAD1);
 	key_flg = now_key & ~old_key;
-	GetJoypadAnalogInput(&Xbuf, &Ybuf, DX_INPUT_PAD1);
+	GetJoypadAnalogInput(&X_buf, &Y_buf, DX_INPUT_PAD1);
 	X_old = X_now;
-	X_now = Xbuf;
+	X_now = X_buf;
 	X_flg = X_now & ~X_old;
 	Y_old = Y_now;
-	Y_now = Ybuf;
+	Y_now = Y_buf;
 	Y_flg = Y_now & ~Y_old;
 }
 

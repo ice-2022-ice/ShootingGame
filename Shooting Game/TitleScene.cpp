@@ -6,19 +6,6 @@
 
 TitleScene::TitleScene()
 {
-	/*try
-	{
-		TitleImage = LoadGraph("images/Title.bmp");
-		if (TitleImage == -1)
-		{
-			throw "images/Title.bmp";
-		}
-	}
-	catch (int& err)
-	{
-		printf("エラーコード%d\n", err);
-	}*/
-
 	MenuNumber = 0;
 	MenuY = 0;
 	Flg = 0;
@@ -26,12 +13,9 @@ TitleScene::TitleScene()
 
 SceneBase* TitleScene::Update()
 {
-
 	g_OldKye = g_NowKey;
 	g_NowKey = GetJoypadInputState(DX_INPUT_KEY_PAD1);
 	g_keyFlg = g_NowKey & ~g_OldKye;
-
-
 
 	//メニューカーソル移動処理
 	if (g_keyFlg & (PAD_INPUT_DOWN))
@@ -43,11 +27,6 @@ SceneBase* TitleScene::Update()
 	{
 		if (--MenuNumber < 0) MenuNumber = 1;
 	}
-
-	/*if (InputKey::GetKey(PAD_INPUT_UP))
-	{
-		MenuNumber = 0;
-	}*/
 
 	// Ｚキーでメニュー選択
 	if (g_keyFlg & (PAD_INPUT_A))
@@ -79,15 +58,13 @@ void TitleScene::Draw() const
 	DrawString(260,250 , "　すたーと　", 0xFFFFFF);			//すたーと
 	DrawString(260, 350, "　らんきんぐ　", 0xFFFFFF);			//ランキング
 
-	////説明
-	//SetFontSize(20);
-	//DrawString(250, 430, "　スティック（↑、↓）で移動　", 0xFFFFFF);
-	//DrawString(250, 450, "　Bボタンを押して選択してください　", 0xFFFFFF);
+	//説明
+	SetFontSize(20);
+	DrawString(250, 430, "　スティック（↑、↓）で移動　", 0xFFFFFF);
+	DrawString(250, 450, "　Bボタンを押して選択してください　", 0xFFFFFF);
 
 	// メニューカーソル（三角形）の表示
 	DrawTriangle(240, 255 + MenuY, 260, 270 + MenuY, 240, 285 + MenuY, GetColor(255, 0, 0), TRUE);
-
-	DrawFormatString(0, 300, 0xff0000, "%d", MenuNumber);
 }
 
 
